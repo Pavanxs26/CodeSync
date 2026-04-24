@@ -1,12 +1,33 @@
-# React + Vite
+# CodeSync — Real-Time Collaborative Coding Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CodeSync is a real-time collaborative code editor that allows multiple users to edit and synchronize code simultaneously with minimal latency.
 
-Currently, two official plugins are available:
+## Features
+- Real-time multi-user collaboration
+- Conflict-free editing using CRDT (Y.js)
+- WebSocket-based communication (Socket.io)
+- Room-based user sessions
+- Scalable backend architecture
+- Cloud deployment using AWS ECS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## System Design Highlights
+- CRDT-based synchronization ensures consistency without conflicts
+- WebSocket event-driven architecture for real-time updates
+- Microservices-inspired deployment using Docker containers
+- Optimized builds using multi-stage Docker pipelines
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
+- Frontend: React.js
+- Backend: Node.js, Express.js
+- Real-Time: Y.js, Socket.io
+- DevOps: Docker
+- Cloud: AWS ECS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Setup
+git clone <repo-url>
+cd codesync
+npm install
+npm run dev
+cd codesync
+npm install
+npm run dev
